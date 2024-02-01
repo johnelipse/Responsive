@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 5rem;
+}
+button {
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3.5rem;
+}
+.card h2 {
+  font-size: 3rem;
+}
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: red;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: blue;
+  width: 20%;
+  flex-shrink: 0;
+}
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  /* For a screen of 768px and below */
+  html {
+    background-color: blue;
+    font-size: 52%;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    background-color: green;
+    font-size: 48%;
+  }
+  .card {
+    width: 100%;
+  }
+}
